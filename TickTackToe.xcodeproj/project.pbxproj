@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		E79A4DA82320A10300E55B11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A4DA72320A10300E55B11 /* AppDelegate.swift */; };
 		E79A4DAA2320A10300E55B11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A4DA92320A10300E55B11 /* ViewController.swift */; };
-		E79A4DAD2320A10300E55B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79A4DAB2320A10300E55B11 /* Main.storyboard */; };
 		E79A4DB02320A10300E55B11 /* TickTackToe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E79A4DAE2320A10300E55B11 /* TickTackToe.xcdatamodeld */; };
 		E79A4DB22320A10400E55B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79A4DB12320A10400E55B11 /* Assets.xcassets */; };
 		E79A4DB52320A10400E55B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79A4DB32320A10400E55B11 /* LaunchScreen.storyboard */; };
 		E79A4DC02320A10400E55B11 /* TickTackToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A4DBF2320A10400E55B11 /* TickTackToeTests.swift */; };
+		E7B9E3CF232EBF8A00838416 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9E3CE232EBF8A00838416 /* RootController.swift */; };
+		E7B9E3D2232F178100838416 /* NavigationStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9E3D1232F178100838416 /* NavigationStateMachine.swift */; };
+		E7B9E3D5232F3E8400838416 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9E3D4232F3E8300838416 /* SignInViewController.swift */; };
+		E7B9E3D72331052000838416 /* CredentialsVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9E3D62331052000838416 /* CredentialsVerifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +33,6 @@
 		E79A4DA42320A10300E55B11 /* TickTackToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTackToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79A4DA72320A10300E55B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E79A4DA92320A10300E55B11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E79A4DAC2320A10300E55B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E79A4DAF2320A10300E55B11 /* TickTackToe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TickTackToe.xcdatamodel; sourceTree = "<group>"; };
 		E79A4DB12320A10400E55B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E79A4DB42320A10400E55B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,10 @@
 		E79A4DBB2320A10400E55B11 /* TickTackToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTackToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79A4DBF2320A10400E55B11 /* TickTackToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTackToeTests.swift; sourceTree = "<group>"; };
 		E79A4DC12320A10400E55B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B9E3CE232EBF8A00838416 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		E7B9E3D1232F178100838416 /* NavigationStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStateMachine.swift; sourceTree = "<group>"; };
+		E7B9E3D4232F3E8300838416 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E7B9E3D62331052000838416 /* CredentialsVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsVerifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +85,10 @@
 		E79A4DA62320A10300E55B11 /* TickTackToe */ = {
 			isa = PBXGroup;
 			children = (
+				E7B9E3D3232F3E6C00838416 /* SignIn */,
+				E7B9E3CD232EBF7700838416 /* App */,
 				E79A4DA72320A10300E55B11 /* AppDelegate.swift */,
 				E79A4DA92320A10300E55B11 /* ViewController.swift */,
-				E79A4DAB2320A10300E55B11 /* Main.storyboard */,
 				E79A4DB12320A10400E55B11 /* Assets.xcassets */,
 				E79A4DB32320A10400E55B11 /* LaunchScreen.storyboard */,
 				E79A4DB62320A10400E55B11 /* Info.plist */,
@@ -97,6 +104,32 @@
 				E79A4DC12320A10400E55B11 /* Info.plist */,
 			);
 			path = TickTackToeTests;
+			sourceTree = "<group>";
+		};
+		E7B9E3CD232EBF7700838416 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E7B9E3D0232F176300838416 /* navigation */,
+				E7B9E3CE232EBF8A00838416 /* RootController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E7B9E3D0232F176300838416 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E7B9E3D1232F178100838416 /* NavigationStateMachine.swift */,
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
+		E7B9E3D3232F3E6C00838416 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				E7B9E3D4232F3E8300838416 /* SignInViewController.swift */,
+				E7B9E3D62331052000838416 /* CredentialsVerifier.swift */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +215,6 @@
 			files = (
 				E79A4DB52320A10400E55B11 /* LaunchScreen.storyboard in Resources */,
 				E79A4DB22320A10400E55B11 /* Assets.xcassets in Resources */,
-				E79A4DAD2320A10300E55B11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +232,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B9E3D5232F3E8400838416 /* SignInViewController.swift in Sources */,
+				E7B9E3D2232F178100838416 /* NavigationStateMachine.swift in Sources */,
 				E79A4DAA2320A10300E55B11 /* ViewController.swift in Sources */,
 				E79A4DA82320A10300E55B11 /* AppDelegate.swift in Sources */,
 				E79A4DB02320A10300E55B11 /* TickTackToe.xcdatamodeld in Sources */,
+				E7B9E3D72331052000838416 /* CredentialsVerifier.swift in Sources */,
+				E7B9E3CF232EBF8A00838416 /* RootController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +261,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E79A4DAB2320A10300E55B11 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E79A4DAC2320A10300E55B11 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E79A4DB32320A10400E55B11 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

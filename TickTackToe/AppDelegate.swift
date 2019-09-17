@@ -16,7 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        let fullScreen = UIScreen.main.bounds
+        let rootController: RootController = RootController()
+
+        rootController.registerView(
+            view: .SignIn,
+            controllerProvider: { SignInViewController(navigation: rootController, credentialsVerifier: CredentialsVerifier()) }
+        )
+        
+        window = UIWindow(frame: fullScreen)
+        window?.rootViewController = rootController
+        window?.makeKeyAndVisible()
+
         return true
     }
 
