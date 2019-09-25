@@ -13,10 +13,23 @@
 		E79A4DB22320A10400E55B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79A4DB12320A10400E55B11 /* Assets.xcassets */; };
 		E79A4DB52320A10400E55B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79A4DB32320A10400E55B11 /* LaunchScreen.storyboard */; };
 		E79A4DC02320A10400E55B11 /* TickTackToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A4DBF2320A10400E55B11 /* TickTackToeTests.swift */; };
+		E79E7C212336A439004F443A /* PlayGameProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E7C202336A439004F443A /* PlayGameProcessor.swift */; };
+		E79E7C242336A53F004F443A /* PlayGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E7C232336A53F004F443A /* PlayGameController.swift */; };
+		E79E7C282336A622004F443A /* MakeMoveAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E7C272336A622004F443A /* MakeMoveAdapter.swift */; };
+		E79E7C2B2336E6EB004F443A /* FindGameAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E7C2A2336E6EB004F443A /* FindGameAdapter.swift */; };
+		E79E7C2D2336E731004F443A /* TickTackToeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E7C2C2336E731004F443A /* TickTackToeGame.swift */; };
+		E79E7C2F2336E779004F443A /* ApplyMoveResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E7C2E2336E779004F443A /* ApplyMoveResponder.swift */; };
+		E79E7C312336EF6F004F443A /* GameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E7C302336EF6F004F443A /* GameRules.swift */; };
+		E79E7C3323372332004F443A /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E7C3223372332004F443A /* GameButton.swift */; };
 		E7B9E3CF232EBF8A00838416 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9E3CE232EBF8A00838416 /* RootController.swift */; };
-		E7B9E3D2232F178100838416 /* NavigationStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9E3D1232F178100838416 /* NavigationStateMachine.swift */; };
+		E7B9E3D2232F178100838416 /* NavigationFiniteAutomata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9E3D1232F178100838416 /* NavigationFiniteAutomata.swift */; };
 		E7B9E3D5232F3E8400838416 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9E3D4232F3E8300838416 /* SignInViewController.swift */; };
 		E7B9E3D72331052000838416 /* CredentialsVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9E3D62331052000838416 /* CredentialsVerifier.swift */; };
+		E7F8DA9F23330A8900DB2276 /* CreateGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8DA9E23330A8900DB2276 /* CreateGameController.swift */; };
+		E7F8DAA323330CC300DB2276 /* CreateGameProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8DAA223330CC300DB2276 /* CreateGameProcessor.swift */; };
+		E7F8DAA52333A76C00DB2276 /* CreateGameAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8DAA42333A76C00DB2276 /* CreateGameAdapter.swift */; };
+		E7F8DAA82333BE5500DB2276 /* InMemoryCreateGameAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8DAA72333BE5500DB2276 /* InMemoryCreateGameAdapter.swift */; };
+		E7F8DAAA233469F000DB2276 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8DAA9233469F000DB2276 /* Navigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +53,23 @@
 		E79A4DBB2320A10400E55B11 /* TickTackToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTackToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79A4DBF2320A10400E55B11 /* TickTackToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTackToeTests.swift; sourceTree = "<group>"; };
 		E79A4DC12320A10400E55B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E79E7C202336A439004F443A /* PlayGameProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameProcessor.swift; sourceTree = "<group>"; };
+		E79E7C232336A53F004F443A /* PlayGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameController.swift; sourceTree = "<group>"; };
+		E79E7C272336A622004F443A /* MakeMoveAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeMoveAdapter.swift; sourceTree = "<group>"; };
+		E79E7C2A2336E6EB004F443A /* FindGameAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameAdapter.swift; sourceTree = "<group>"; };
+		E79E7C2C2336E731004F443A /* TickTackToeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTackToeGame.swift; sourceTree = "<group>"; };
+		E79E7C2E2336E779004F443A /* ApplyMoveResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyMoveResponder.swift; sourceTree = "<group>"; };
+		E79E7C302336EF6F004F443A /* GameRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRules.swift; sourceTree = "<group>"; };
+		E79E7C3223372332004F443A /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
 		E7B9E3CE232EBF8A00838416 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
-		E7B9E3D1232F178100838416 /* NavigationStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStateMachine.swift; sourceTree = "<group>"; };
+		E7B9E3D1232F178100838416 /* NavigationFiniteAutomata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationFiniteAutomata.swift; sourceTree = "<group>"; };
 		E7B9E3D4232F3E8300838416 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E7B9E3D62331052000838416 /* CredentialsVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsVerifier.swift; sourceTree = "<group>"; };
+		E7F8DA9E23330A8900DB2276 /* CreateGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameController.swift; sourceTree = "<group>"; };
+		E7F8DAA223330CC300DB2276 /* CreateGameProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameProcessor.swift; sourceTree = "<group>"; };
+		E7F8DAA42333A76C00DB2276 /* CreateGameAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameAdapter.swift; sourceTree = "<group>"; };
+		E7F8DAA72333BE5500DB2276 /* InMemoryCreateGameAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCreateGameAdapter.swift; sourceTree = "<group>"; };
+		E7F8DAA9233469F000DB2276 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +111,9 @@
 		E79A4DA62320A10300E55B11 /* TickTackToe */ = {
 			isa = PBXGroup;
 			children = (
-				E7B9E3D3232F3E6C00838416 /* SignIn */,
-				E7B9E3CD232EBF7700838416 /* App */,
+				E79E7C252336A5E1004F443A /* adapters */,
+				E7F8DAA023330B6300DB2276 /* core */,
+				E7B9E3CD232EBF7700838416 /* app */,
 				E79A4DA72320A10300E55B11 /* AppDelegate.swift */,
 				E79A4DA92320A10300E55B11 /* ViewController.swift */,
 				E79A4DB12320A10400E55B11 /* Assets.xcassets */,
@@ -106,30 +133,106 @@
 			path = TickTackToeTests;
 			sourceTree = "<group>";
 		};
-		E7B9E3CD232EBF7700838416 /* App */ = {
+		E79E7C1F2336A424004F443A /* play */ = {
 			isa = PBXGroup;
 			children = (
+				E79E7C202336A439004F443A /* PlayGameProcessor.swift */,
+				E79E7C272336A622004F443A /* MakeMoveAdapter.swift */,
+				E79E7C2E2336E779004F443A /* ApplyMoveResponder.swift */,
+				E79E7C302336EF6F004F443A /* GameRules.swift */,
+			);
+			path = play;
+			sourceTree = "<group>";
+		};
+		E79E7C222336A522004F443A /* play */ = {
+			isa = PBXGroup;
+			children = (
+				E79E7C232336A53F004F443A /* PlayGameController.swift */,
+				E79E7C3223372332004F443A /* GameButton.swift */,
+			);
+			path = play;
+			sourceTree = "<group>";
+		};
+		E79E7C252336A5E1004F443A /* adapters */ = {
+			isa = PBXGroup;
+			children = (
+				E79E7C262336A5F4004F443A /* create */,
+			);
+			path = adapters;
+			sourceTree = "<group>";
+		};
+		E79E7C262336A5F4004F443A /* create */ = {
+			isa = PBXGroup;
+			children = (
+				E7F8DAA72333BE5500DB2276 /* InMemoryCreateGameAdapter.swift */,
+			);
+			path = create;
+			sourceTree = "<group>";
+		};
+		E79E7C292336E6DD004F443A /* find */ = {
+			isa = PBXGroup;
+			children = (
+				E79E7C2A2336E6EB004F443A /* FindGameAdapter.swift */,
+			);
+			path = find;
+			sourceTree = "<group>";
+		};
+		E7B9E3CD232EBF7700838416 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				E79E7C222336A522004F443A /* play */,
+				E7F8DA9D23330A6F00DB2276 /* create */,
+				E7B9E3D3232F3E6C00838416 /* signin */,
 				E7B9E3D0232F176300838416 /* navigation */,
 				E7B9E3CE232EBF8A00838416 /* RootController.swift */,
 			);
-			path = App;
+			path = app;
 			sourceTree = "<group>";
 		};
 		E7B9E3D0232F176300838416 /* navigation */ = {
 			isa = PBXGroup;
 			children = (
-				E7B9E3D1232F178100838416 /* NavigationStateMachine.swift */,
+				E7B9E3D1232F178100838416 /* NavigationFiniteAutomata.swift */,
+				E7F8DAA9233469F000DB2276 /* Navigator.swift */,
 			);
 			path = navigation;
 			sourceTree = "<group>";
 		};
-		E7B9E3D3232F3E6C00838416 /* SignIn */ = {
+		E7B9E3D3232F3E6C00838416 /* signin */ = {
 			isa = PBXGroup;
 			children = (
 				E7B9E3D4232F3E8300838416 /* SignInViewController.swift */,
 				E7B9E3D62331052000838416 /* CredentialsVerifier.swift */,
 			);
-			path = SignIn;
+			path = signin;
+			sourceTree = "<group>";
+		};
+		E7F8DA9D23330A6F00DB2276 /* create */ = {
+			isa = PBXGroup;
+			children = (
+				E7F8DA9E23330A8900DB2276 /* CreateGameController.swift */,
+			);
+			path = create;
+			sourceTree = "<group>";
+		};
+		E7F8DAA023330B6300DB2276 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				E79E7C292336E6DD004F443A /* find */,
+				E79E7C1F2336A424004F443A /* play */,
+				E7F8DAA123330CB800DB2276 /* create */,
+				E79E7C2C2336E731004F443A /* TickTackToeGame.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		E7F8DAA123330CB800DB2276 /* create */ = {
+			isa = PBXGroup;
+			children = (
+				E7F8DAA42333A76C00DB2276 /* CreateGameAdapter.swift */,
+				E7F8DAA223330CC300DB2276 /* CreateGameProcessor.swift */,
+			);
+			path = create;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,12 +336,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B9E3D5232F3E8400838416 /* SignInViewController.swift in Sources */,
-				E7B9E3D2232F178100838416 /* NavigationStateMachine.swift in Sources */,
+				E79E7C242336A53F004F443A /* PlayGameController.swift in Sources */,
+				E7B9E3D2232F178100838416 /* NavigationFiniteAutomata.swift in Sources */,
 				E79A4DAA2320A10300E55B11 /* ViewController.swift in Sources */,
+				E7F8DAA82333BE5500DB2276 /* InMemoryCreateGameAdapter.swift in Sources */,
+				E79E7C212336A439004F443A /* PlayGameProcessor.swift in Sources */,
+				E79E7C2D2336E731004F443A /* TickTackToeGame.swift in Sources */,
+				E7F8DAA323330CC300DB2276 /* CreateGameProcessor.swift in Sources */,
+				E7F8DAAA233469F000DB2276 /* Navigator.swift in Sources */,
+				E79E7C3323372332004F443A /* GameButton.swift in Sources */,
 				E79A4DA82320A10300E55B11 /* AppDelegate.swift in Sources */,
 				E79A4DB02320A10300E55B11 /* TickTackToe.xcdatamodeld in Sources */,
+				E79E7C312336EF6F004F443A /* GameRules.swift in Sources */,
 				E7B9E3D72331052000838416 /* CredentialsVerifier.swift in Sources */,
+				E79E7C282336A622004F443A /* MakeMoveAdapter.swift in Sources */,
+				E79E7C2B2336E6EB004F443A /* FindGameAdapter.swift in Sources */,
 				E7B9E3CF232EBF8A00838416 /* RootController.swift in Sources */,
+				E7F8DA9F23330A8900DB2276 /* CreateGameController.swift in Sources */,
+				E79E7C2F2336E779004F443A /* ApplyMoveResponder.swift in Sources */,
+				E7F8DAA52333A76C00DB2276 /* CreateGameAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

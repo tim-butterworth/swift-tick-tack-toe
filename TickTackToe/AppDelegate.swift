@@ -14,16 +14,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         
         let fullScreen = UIScreen.main.bounds
         let rootController: RootController = RootController()
-
+        let inMemoryAdapter = InMemoryCreateGameAdapter()
+        
         rootController.registerView(
-            view: .SignIn,
+            view: .signIn,
             controllerProvider: { SignInViewController(navigation: rootController, credentialsVerifier: CredentialsVerifier()) }
+        )
+        rootController.registerView(
+            view: .createGame,
+            controllerProvider: { CreateGameController(navigation: rootController, CreateGameProcessor(createGameAdapter: inMemoryAdapter)) }
+        )
+        rootController.registerView(
+            view: .playGame,
+            controllerProvider: {
+                PlayGameController(
+                    navigation: rootController,
+                    processor: PlayGameProcessor(
+                        makeMoveAdapter: inMemoryAdapter,
+                        findGameAdapter: inMemoryAdapter,
+                        gameRules: GameRules())
+                    )
+            }
         )
         
         window = UIWindow(frame: fullScreen)
